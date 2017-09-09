@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/activity_main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.ztxd.ciphertest.MainActivity">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <EditText
+      android:id="@+id/secret_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="输入需要加密的数据" />
+
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="aesEncrypt"
+      android:text="AES加密" />
+
+    <TextView
+      android:id="@+id/decrypt_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="展示数据" />
+
+
+
+    <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="aesDecrypt"
+      android:text="AES解密" />
+
+
+    <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:onClick="getDefaultType"/>
+  </LinearLayout>
+
+
+
+
+
+</LinearLayout>
